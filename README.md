@@ -1,6 +1,6 @@
 # AI-Based Drone Navigation for Smart Delivery
 
-This project implements an Artificial Intelligence based autonomous drone navigation system designed for smart delivery applications. The system uses Reinforcement Learning to automatically learn optimal navigation policies, avoid obstacles, and follow delivery routes inside a simulated environment.
+This project implements an Artificial Intelligence based autonomous drone navigation system designed for smart delivery applications. The system is capable of navigating in any direction and at any angle, providing full 360° maneuverability in dynamic environments. It uses Reinforcement Learning to automatically learn optimal navigation policies, avoid obstacles, and follow delivery routes inside a simulated environment.
 
 ---
 
@@ -88,5 +88,6 @@ Cloud based control system
 Multi-drone communication
 Delivery scheduling
 Drone fleet management
+
 
 

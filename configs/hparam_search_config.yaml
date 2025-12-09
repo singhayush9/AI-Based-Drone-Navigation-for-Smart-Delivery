@@ -1,0 +1,44 @@
+# Hyperparameter Search Configuration
+
+# Dataset generation
+dataset:
+  n_train: 10000
+  n_val: 2000
+  n_test: 1000
+  output_dir: "data"
+
+# Hyperparameter search
+search:
+  algorithm: "ppo"  # or "sac"
+  n_trials: 50
+  batch_size: 1000  # scenarios per batch
+  timesteps_per_scenario: 1000
+  seed: 42
+
+# Final training
+final_training:
+  total_timesteps: 1000000
+  eval_freq: 10000
+  checkpoint_freq: 50000
+  n_eval_episodes: 100
+
+# Resource management
+resources:
+  n_parallel_trials: 1  # Set to 1 if limited resources
+  max_training_time_hours: 24
+# Validation strategy
+validation:
+  early_stopping: true
+  patience: 5  # Stop if no improvement for 5 evaluations
+  min_improvement: 0.01  # Minimum improvement threshold
+
+# Batch strategy
+batching:
+  strategy: "progressive"  # 'progressive', 'random', 'stratified'
+  batch_sizes: [500, 1000, 2000]  # Progressive batch sizes
+  
+# Logging
+logging:
+  tensorboard: true
+  wandb: false  # Set true if using Weights & Biases
+  save_frequency: 10

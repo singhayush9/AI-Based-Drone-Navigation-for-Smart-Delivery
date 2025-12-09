@@ -1,0 +1,61 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Train Realistic Models",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/train_realistic.py",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Evaluate Hybrid System",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/evaluate_hybrid.py",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Test Environments",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/test_env.py",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Generate Test Scenarios",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/scripts/generate_synthetic_data.py",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": " FULL PIPELINE - Hyperparameter Tuning",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/run_full_pipeline.py",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Step 1: Generate Large Dataset",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/hparam_tuning/dataset_generator.py",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Step 2: Analyze Results",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/scripts/analyze_hparam_results.py",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Benchmark All",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/scripts/benchmark.py",
+      "console": "integratedTerminal"
+    }
+  ]
+}

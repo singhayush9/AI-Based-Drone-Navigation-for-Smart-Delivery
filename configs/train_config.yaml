@@ -1,0 +1,33 @@
+# Training Configuration for Realistic Drone Delivery
+
+# Training parameters
+total_steps: 300000
+eval_episodes: 10
+log_dir: "./logs_realistic"
+
+# Algorithm hyperparameters
+algo_params:
+  learning_rate: 0.0003
+  gamma: 0.99
+
+# Callback settings
+callbacks:
+  eval_freq: 10000
+  eval_episodes: 5
+
+# Realistic environment configuration
+env:
+  grid_limit: 10
+  min_obstacles: 2
+  max_obstacles: 12
+  max_steps: 400
+  step_scale: 0.5
+  max_lin_vel: 3.0
+  max_yaw_rate: 1.5
+  curriculum_learning: true
+
+# Hybrid A*+RL settings
+hybrid:
+  use_astar_planning: true
+  waypoint_threshold: 0.8
+  replan_threshold: 2.0

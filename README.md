@@ -71,6 +71,7 @@ pip install -r requirements.txt
 ## ▶️ Run Simulation
 
 python test_env.py
+
 python run_full_pipeline.py
 
 # Output
@@ -87,4 +88,5 @@ Cloud based control system
 Multi-drone communication
 Delivery scheduling
 Drone fleet management
+
 

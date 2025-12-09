@@ -63,7 +63,9 @@ requirements.txt
 
 bash
 git clone https://github.com/singhayush9/AI-Based-Drone-Navigation-for-Smart-Delivery.git
+
 cd AI-Based-Drone-Navigation-for-Smart-Delivery
+
 pip install -r requirements.txt
 
 ## ▶️ Run Simulation
@@ -85,3 +87,4 @@ Cloud based control system
 Multi-drone communication
 Delivery scheduling
 Drone fleet management
+
